@@ -49,14 +49,14 @@ class DiskSchedulingApp(tk.Tk):
 
     def create_variables(self):
 
-        self.head_var = tk.StringVar(value="53")
+        self.head_var = tk.StringVar(value="")
 
         self.queue_var = tk.StringVar(
-            value="98, 183, 37, 122, 14, 124, 65, 67"
+            value=""
         )
 
-        self.minimum_var = tk.StringVar(value="0")
-        self.maximum_var = tk.StringVar(value="199")
+        self.minimum_var = tk.StringVar(value="")
+        self.maximum_var = tk.StringVar(value="")
 
         self.direction_var = tk.StringVar(value="right")
 
@@ -1175,14 +1175,12 @@ class DiskSchedulingApp(tk.Tk):
 
     def reset_inputs(self):
 
-        self.head_var.set("53")
+        self.head_var.set("")
 
-        self.queue_var.set(
-            "98, 183, 37, 122, 14, 124, 65, 67"
-        )
+        self.queue_var.set("")
 
-        self.minimum_var.set("0")
-        self.maximum_var.set("199")
+        self.minimum_var.set("")
+        self.maximum_var.set("")
 
         self.direction_var.set("right")
 
